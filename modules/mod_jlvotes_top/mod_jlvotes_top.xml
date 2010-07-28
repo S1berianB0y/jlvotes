@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="update">
+	<name>JLvotes Top rated articles</name>
+	<creationDate>June 2010</creationDate>
+	<author>JoomLine</author>
+	<authorEmail>anton@joomline.ru</authorEmail>
+	<authorUrl>http://www.joomline.ru</authorUrl>
+	<copyright>(C) 2010 by Anton Voynov (http://www.joomline.ru)</copyright>
+	<license>GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.0</version>
+	<description>Displays top rated (with jlvotes) articles</description>
+	<files>
+		<filename module="mod_jlvotes_top">mod_jlvotes_top.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="ru-RU">ru-RU.mod_jlvotes_top.ini</language>
+		<language tag="en-GB">en-GB.mod_jlvotes_top.ini</language>
+	</languages>
+	<params>	 
+		<param name="max_items" type="text" label="NUMBEROBJECTS" default="5"/>
+		<param name="displaystyle" type="radio" label="DISPLAYSTYLE" default="0">
+		  <option value="0">DISPSTANDART</option>
+		  <option value="1">DISPTABLE</option>
+		</param>
+		
+		<param type="spacer"/>
+		<param name="show_image" type="radio" label="SHOWIMAGE" description="SHOWIMAGEDESC" default="1">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+		</param>
+		<param name="thumb_w" 	type="text" label="WIDTHJL" default="80"/>
+		<param name="thumb_h" 	type="text" label="HEIGHTJL" default="60"/>
+		<param type="spacer"/>
+		<param name="showintro" type="radio" label="SHOWINTRO" default="1">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+		</param>
+		<param name="max_words" type="text" label="NUMBERWORDS" default="10"/>
+		<param name="show_readmorebtn" type="radio" label="SHOWREADMOREBTN" default="1">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+		</param>
+		<param name="titleaslink" type="radio" label="TITLEASLINK" default="1">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+		</param>
+		<param name="showvotescount" type="radio" label="SHOWVOTESCOUNT" default="1">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+		</param>
+		<param name="showlikecount" type="radio" label="SHOWLIKECOUNT" default="0">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+		</param>
+		<param name="showdontlikecount" type="radio" label="SHOWDONTLIKECOUNT" default="0">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+		</param>
+		<param name="showtotalrating" type="radio" label="SHOWTOTALRATING" default="0">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+		</param>
+		
+	</params>	
+</install>

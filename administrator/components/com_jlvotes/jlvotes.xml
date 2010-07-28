@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>JLVotes</name>
+	<creationDate>June 2010</creationDate>
+	<author>JoomLine</author>
+	<authorEmail>anton@joomline.ru</authorEmail>
+	<authorUrl>http://www.joomline.ru</authorUrl>
+	<copyright>(C) 2010 by Anton Voynov(http://www.joomline.ru)</copyright>
+	<license>GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.3</version>
+	<description>JoomLine Vote</description>
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+	<install><sql><file charset="utf8" driver="mysql">install.sql</file></sql></install>
+	<uninstall><sql><file charset="utf8" driver="mysql">uninstall.sql</file></sql></uninstall>
+	<files folder="site">
+		<filename>templates/plugin.tpl</filename>
+		<filename>templates/jlvotes.css</filename>
+		<filename>ajax.php</filename>
+		<filename>ajax-loader.gif</filename>
+	</files>
+	<languages folder="languages/plugin">
+		<language tag="en-GB">en-GB.plg_content_jlvotes.ini</language>
+		<language tag="ru-RU">ru-RU.plg_content_jlvotes.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_jlvotes.ini</language>
+	</languages>	 
+	
+	
+	<administration>	
+		<menu>JL votes</menu>
+		<submenu>
+			<menu link="option=com_jlvotes&amp;task=settings">Settings</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>install.php</filename>
+			<filename>uninstall.php</filename>
+			<filename>jlvotes.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>plugins/content/jlvotes.php</filename>
+			<filename>plugins/content/jlvotes.xml</filename>
+			<filename>plugins/content/jlvotes.xml</filename>
+			<filename>plugins/editors-xtd/jlvotesonbtn.php</filename>
+			<filename>plugins/editors-xtd/jlvotesonbtn.xml</filename>
+			<filename>plugins/editors-xtd/jlvotesoffbtn.php</filename>
+			<filename>plugins/editors-xtd/jlvotesoffbtn.xml</filename>
+			<filename>views/settings/tmpl/default.php</filename>
+			<filename>views/settings/tmpl/index.html</filename>
+			<filename>views/settings/view.html.php</filename>
+			<filename>views/index.html</filename>
+			<filename>models/index.html</filename>
+			<filename>models/settings.php</filename>
+		</files>  
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB.com_jlvotes.ini</language>
+			<language tag="ru-RU">ru-RU.com_jlvotes.ini</language>
+		</languages>	 
+		
+	</administration>
+</install>
