@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>jlvotes</name>
+	<author>JoomLine</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>(C) 2010 by Anton Voynov(http://www.joomline.ru)</copyright>
+	<license>GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>anton@joomline.ru</authorEmail>
+	<authorUrl>http://joomline.ru</authorUrl>
+	<version>1.0</version>
+	<description>jlvotes</description>
+	<files>
+		<filename plugin="jlvotes">jlvotes.php</filename>
+	</files>
+</install>
